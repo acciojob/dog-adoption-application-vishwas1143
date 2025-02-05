@@ -10,21 +10,29 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	 <form>
     <label for="name">Name</label>
-    <input type="text" id="name" placeholder="name">
-    <label for="phone">Phone Number</label>	
-	<input type="text" id="phone" placeholder="Phone Number">
-	<label for="address">Address</label>
-	<input type="text" id="address" placeholder="Address">
-	<label for="checkbox">Have you ever lived with a Dog before?</label>
-	<input type="checkbox" value="Have you ever lived with a Dog before?">
-	<label for="select">Please select your preferred breeds</label>
-	<select id="select">
-		<option value="Friendly">Friendly</option>
-		<option value="Loyal">Loyal</option>
-		<option value="Gentle">Gentle</option>
-	</select>
-	<button value="Submit">Submit</button>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="phone">Phone Number</label>    
+    <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Enter your address" required>
+
+    <label for="dog_experience">Have you ever lived with a Dog before?</label>
+    <input type="checkbox" id="dog_experience" name="dog_experience">
+
+    <label for="breeds">Please select your preferred breeds</label>
+    <select id="breeds" name="breeds" multiple>
+        <option value="Friendly">Friendly</option>
+        <option value="Loyal">Loyal</option>
+        <option value="Gentle">Gentle</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
 </body>
 
 </html>
